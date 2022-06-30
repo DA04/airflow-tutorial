@@ -3,7 +3,7 @@ from airflow.operators.bash import BashOperator
 from airflow.utils.dates import days_ago
 
 dag = DAG(
-    dag_id='dag',
+    dag_id='_BashOperator',
     schedule_interval='@daily',
     start_date=days_ago(1)
   )

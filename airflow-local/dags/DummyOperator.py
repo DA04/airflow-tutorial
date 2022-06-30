@@ -18,7 +18,7 @@ class DummyOperator(BaseOperator):
         return context['ti'].xcom_push(key='key', value=random.choice(range(0,9)))
 
 
-dag = DAG('dag_dummy',schedule_interval='@daily', start_date=days_ago(1))
+dag = DAG('_DummyOperator',schedule_interval='@daily', start_date=days_ago(1))
 t1 = DummyOperator(task_id='task_1', dag=dag)
 t2 = DummyOperator(task_id='task_2', dag=dag)
 

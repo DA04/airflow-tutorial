@@ -10,7 +10,7 @@ default_args = {
     'start_date': datetime(2022, 2, 16)
 }
 
-dag = DAG('dag', schedule_interval='@daily', default_args=default_args)
+dag = DAG('_BranchXCOM', schedule_interval='@daily', default_args=default_args)
 
 def rand(**kwargs):
   kwargs['ti'].xcom_push(key='rand', value=randint(0, 10))

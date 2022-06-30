@@ -1,0 +1,17 @@
+# Source article
+https://towardsdatascience.com/run-airflow-docker-1b83a57616fb
+
+$cd /c/Users/79653/airflow-local
+$docker-compose up
+
+Airflow GUI:
+http://localhost:8080/home
+
+Username: airflow
+Password: airflow
+
+Dags folder:
+C:\Users\79653\airflow-local\dags
+
+
+

@@ -4,7 +4,7 @@ from airflow.sensors.http_sensor import HttpSensor
 
 
 dag = DAG(
-  dag_id='dag',
+  dag_id='_HttpSensor',
   schedule_interval='@daily',
   start_date=airflow.utils.dates.days_ago(1)
   )

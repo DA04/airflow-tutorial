@@ -10,7 +10,7 @@ def get_data():
   value = {'host':connection.host, 'login':connection.login, 'password':connection.password}
   return Variable.set(connection.conn_id, value, serialize_json=True)
 
-dag = DAG('dag', schedule_interval='@daily', start_date=days_ago(1))
+dag = DAG('_Comnection_Variable', schedule_interval='@daily', start_date=days_ago(1))
 
 task_1 = PythonOperator(
     task_id = 'task_1',
